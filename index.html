@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Portofolio Muhammad Ridhwan Abulkhair: sertifikat kompetensi, tools desain dan pengembangan web, serta kontak untuk kerja sama.">
+  <meta name="author" content="Muhammad Ridhwan Abulkhair">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="Muhammad Ridhwan Abulkhair – Portofolio">
+  <meta property="og:description" content="Sertifikat kompetensi dan tools yang saya gunakan untuk desain dan web.">
+  <meta property="og:type" content="website">
+  <title>Muhammad Ridhwan Abulkhair – Portofolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32'/%3E%3Ctext x='32' y='43' font-size='32' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='white'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#konten">Lompat ke konten</a>
+
+  <!-- ===== Kepala situs & navigasi utama ===== -->
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Ridhwan dev, ke beranda">Ridhwan dev</a>
+      <ul class="nav-links" id="menu">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#proyek">Portofolio</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Konten utama ===== -->
+  <main id="konten">
+
+    <section class="hero" id="beranda" aria-labelledby="judul-hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="judul-hero">Halo, saya Muhammad Ridhwan Abulkhair desainer grafis</h1>
+          <p class="lead">seorang mahasiswa teknik informatika yang hobi desain.</p>
+          <p class="hero-actions">
+            <a class="btn btn-primary" href="#proyek">Lihat portofolio</a>
+            <a class="btn" href="#kontak">Ajak kerja sama</a>
+          </p>
+        </div>
+        <figure class="portrait">
+          <div class="blob">
+            <img src="images/foto-profil.png" alt="Foto Muhammad Ridhwan Abulkhair" width="717" height="1043">
+          </div>
+          <span class="sun" aria-hidden="true"></span>
+          <figcaption class="sr-only">Muhammad Ridhwan Abulkhair</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="tentang" aria-labelledby="judul-tentang">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2 id="judul-tentang" style="font-size:var(--fs-xl)">Tentang saya</h2>
+            <p>Mahasiswa S1 Informatika Universitas Teknologi Yogyakarta yang memadukan latar belakang Desain Komunikasi Visual (DKV) dengan keahlian web development. Saya berfokus pada frontend dan desain antarmuka untuk membangun aplikasi web yang modern, tampilan menarik, dan berperforma tinggi. Dengan pengalaman PKL di studio foto dan pembelajaran mandiri, saya siap berkontribusi nyata di industri teknologi.</p>
+          </div>
+          <aside class="education" aria-labelledby="judul-pendidikan">
+            <h3 id="judul-pendidikan">Pendidikan terakhir</h3>
+            <ol class="edu-list">
+              <li>
+                <strong>Desain Komunikasi Visual (DKV)</strong>
+                <span class="periode"><time datetime="2022">2022</time> – <time datetime="2025">2025</time></span>
+              </li>
+              <li>
+                <strong>S1 Informatika</strong>
+                <span class="periode"><time datetime="2025">2025</time> – sekarang</span>
+              </li>
+            </ol>
+          </aside>
+        </div>
+
+        <h3 class="sr-only">Keahlian</h3>
+        <ul class="skills">
+          <li class="skill-group">
+            <h4>Antarmuka</h4>
+            <ul class="chips"><li>HTML semantik</li><li>CSS Grid</li><li>Flexbox</li><li>Responsive</li></ul>
+          </li>
+          <li class="skill-group">
+            <h4>Pemrograman</h4>
+            <ul class="chips"><li>Python</li><li>php</li><li>dart</li></ul>
+          </li>
+          <li class="skill-group">
+            <h4>Aplikasi desain</h4>
+            <ul class="chips"><li>Figma</li><li>Adobe Illustrator</li><li>Adobe Photoshop</li><li>Alight Motion</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyek" aria-labelledby="judul-proyek">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="judul-proyek">Portofolio Showcase</h2>
+          <p>Sertifikat kompetensi dan tools yang saya gunakan.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter kategori proyek">
+          <button class="filter" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+          <button class="filter" type="button" data-filter="sertifikat" aria-pressed="false">Sertifikat</button>
+          <button class="filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+
+        <ul class="projects" id="projectList" aria-live="polite">
+          <li>
+            <article class="project" data-cat="sertifikat" data-title="Sertifikat Fotografer Junior" data-img="images/proyek/sertifikat-fotografer-junior.jpg">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-sertifikat-fotografer-junior.jpg" alt="Pratinjau Sertifikat Fotografer Junior" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Sertifikat</p>
+                <h3>Sertifikat Fotografer Junior</h3>
+                <p>Uji Kompetensi Keahlian Desain Komunikasi Visual. Predikat Kompeten.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="sertifikat" data-title="Sertifikat Content Creator Junior" data-img="images/proyek/sertifikat-content-creator.jpg">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-sertifikat-content-creator.jpg" alt="Pratinjau Sertifikat Content Creator Junior" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Sertifikat</p>
+                <h3>Sertifikat Content Creator Junior</h3>
+                <p>Uji Kompetensi Keahlian Desain Komunikasi Visual. Predikat Kompeten.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="sertifikat" data-title="Sertifikat Junior Operator Desain Grafis" data-img="images/proyek/sertifikat-desain-grafis.jpg">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-sertifikat-desain-grafis.jpg" alt="Pratinjau Sertifikat Junior Operator Desain Grafis" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Sertifikat</p>
+                <h3>Sertifikat Junior Operator Desain Grafis</h3>
+                <p>Uji Kompetensi Keahlian Desain Komunikasi Visual. Predikat Kompeten.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="tools" data-title="Visual Studio Code" data-img="images/proyek/logo-vscode.png">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-vscode.jpg" alt="Pratinjau Visual Studio Code" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Tools</p>
+                <h3>Visual Studio Code</h3>
+                <p>Editor kode untuk membangun website.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="tools" data-title="Adobe Illustrator" data-img="images/proyek/logo-illustrator.png">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-illustrator.jpg" alt="Pratinjau Adobe Illustrator" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Tools</p>
+                <h3>Adobe Illustrator</h3>
+                <p>Desain grafis berbasis vektor.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="tools" data-title="Alight Motion" data-img="images/proyek/logo-alight-motion.png">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-alight-motion.jpg" alt="Pratinjau Alight Motion" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Tools</p>
+                <h3>Alight Motion</h3>
+                <p>Edit video dan foto.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project" data-cat="tools" data-title="CapCut" data-img="images/proyek/logo-capcut.png">
+              <figure>
+                <img class="thumb-img" src="images/proyek/thumb-capcut.jpg" alt="Pratinjau CapCut" width="800" height="500" loading="lazy">
+              </figure>
+              <div class="project-body">
+                <p class="tag">Tools</p>
+                <h3>CapCut</h3>
+                <p>Edit video dan foto.</p>
+                <button class="btn" type="button" aria-haspopup="dialog">Lihat detail</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak" aria-labelledby="judul-kontak">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 id="judul-kontak">Hubungi Saya</h2>
+          <p>Ceritakan kebutuhanmu. Saya akan balas secepat mungkin.</p>
+        </header>
+        <div class="contact-grid">
+          <address>
+            <p>Email<br><a href="mailto:rdhwnkhr@gmail.com">rdhwnkhr@gmail.com</a></p>
+            <p>GitHub<br><a href="https://github.com/dharwin212" rel="noopener noreferrer" target="_blank">github.com/dharwin212</a></p>
+          </address>
+
+          <form id="contactForm" novalidate data-mailto="rdhwnkhr@gmail.com">
+            <fieldset>
+              <legend class="sr-only">Formulir kontak</legend>
+              <div class="field">
+                <label for="nama">Nama</label>
+                <input id="nama" name="nama" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="err-nama">
+                <span class="error" id="err-nama"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="err-email">
+                <span class="error" id="err-email"></span>
+              </div>
+              <div class="field">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="4" required minlength="10" maxlength="2000" aria-describedby="err-pesan"></textarea>
+                <span class="error" id="err-pesan"></span>
+              </div>
+              <button class="btn btn-primary" type="submit">Kirim pesan</button>
+              <p class="form-msg" id="formMsg" role="status"></p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Kaki situs ===== -->
+  <footer>
+    <p><small>&copy; <time datetime="2026">2026</time> Muhammad Ridhwan Abulkhair.</small></p>
+  </footer>
+
+  <!-- ===== Dialog: gambar penuh proyek ===== -->
+  <dialog id="projectDialog" aria-labelledby="dlgTitle">
+    <form method="dialog" class="dialog-inner">
+      <figure>
+        <img id="dlgImg" src="" alt="">
+        <figcaption id="dlgTitle"></figcaption>
+      </figure>
+      <div class="dialog-actions">
+        <button class="btn btn-primary" type="submit">Tutup</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
